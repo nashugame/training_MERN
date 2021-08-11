@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function details(){
+            document.getElementById('product').innerHTML="<p style='font-size:20;color:GREEN;'>Cheese pizza with extra veggie toppings</p>"
+        }
+
+        function discount(){
+            var price = parseInt(document.getElementById('price').value);
+            document.getElementById('info').innerHTML=0.05*price
+        }
+    </script>
+</head>
+<body>
+    <div style="background-color: aqua; width: 200; height: 200;" onmouseover="details()" id="product">
+        Pizza
+    </div>
+    <br>
+    Enter price: <input type="number" name="" id="price" onkeydown="discount()">
+    <p id="info"></p>
+
+</body>
+</html>

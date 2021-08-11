@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            var name = document.getElementById('username').value
+            var password = document.getElementById('password').value
+            var mailId = document.getElementById('mailId').value
+
+            if(name == null || name.length<=5){
+                alert('User name incorrect')
+            }
+            else if(password == null || password.length<=5 || password.length>=11){
+                alert('Password not valid')
+            }
+            else if(mailId == null || !mailId.includes('@')){
+                alernt('Mail Id not valid')
+            }
+            else{
+                document.getElementById('ans').innerHTML="Valid Details"
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form action="#" method="POST">
+        Enter name: <input type="text" name="name" id="username"> <br>
+        Enter password: <input type="password" name="password" id="password"><br>
+        Enter mail id: <input type="text" name="mail id" id="mailId"><br>
+        <input type="button" value="submit" onclick="check()">
+        <p id="ans"></p>
+    </form>
+</body>
+</html>

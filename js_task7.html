@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var pat1 = /^https/
+    var pat2 = /org$/
+    var str1 = "https://sshbsbsbsbdjd@sjsj.org"
+    var str2 = "ssssbbb"
+    var pat3 = /b+/
+    var pat4 = /c+/
+    if(str1.match(pat1) && str1.match(pat2)){
+        document.write("match found")
+    }
+    else{
+        document.write("no match")
+    }
+    document.write("<br>")
+    if(str2.length>=5 && str2.match(pat3) && str2.match(pat4)){
+        document.write("match found")
+    }
+    else{
+        document.write("no match")
+    }
+</script>
+<body>
+    
+</body>
+</html>
